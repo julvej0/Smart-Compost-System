@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root {
+    --bg-color: linear-gradient(to bottom left,#216e93,#21648a,#1f5881,#172d5b,#191c51);
+    --text-color: white;
+    --nav-color: #181745;
+    --second-text-color: #e6526d;
+    --third-text-color: #8c8ba6;
+}
+
+body {
+    background: var(--bg-color);
+    line-height: 24px;
+    height: 100vh;
+}
+
+.wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: transparent;
+    width: 80%;
+    height: 90%;
+    display: flex;
+}
+
+.sidebar {
+    width: 25%;
+    background: var(--nav-color);
+    padding: 25px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar ul li {
+    background: transparent;
+    margin-bottom: 25px;
+    border-radius: 3px;
+    padding: 10px 25px;
+    font-weight: 500;
+    position: relative;
+    width: 282px;
+    letter-spacing: 2px;
+    transition: all 0.4s ease;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.sidebar ul li p {
+    color: var(--third-text-color);
+    position: relative;
+    font-weight: 300;
+}
+
+.sidebar ul li::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 3px;
+    background: #20c997;
+    transition: all 0.004s ease;
+}
+
+.sidebar ul li:last-child {
+    margin-bottom: 0;
+
+}
+
+.sidebar ul li.active p {
+    color: #fff;
+}
+
+.sidebar ul li.active::before {
+    height: 100%;
+    transition: all 0.004s ease;
+}
+
+.sidebar ul li p:hover {
+    color: #fff;
+}
+
+.content {
+    width: 70%;
+    padding: 30px 50px;
+}
+
+.content .header {
+    font-size: 24px;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.content .item .item-info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
