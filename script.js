@@ -1,5 +1,6 @@
 var li_elements = document.querySelectorAll(".sidebar ul li");
 var item_elements = document.querySelectorAll(".item");
+var div_elements = document.querySelectorAll(".date ul li");
 for(var i = 0; i < li_elements.length; i++){
     li_elements[i].addEventListener("click", function() {
         li_elements.forEach(function(li) {
@@ -29,4 +30,13 @@ for(var i = 0; i < li_elements.length; i++){
         }
 
     });
+}
+
+for(var i = 0; i < div_elements.length; i++){
+    div_elements[i].addEventListener("click", function(){
+        div_elements.forEach(function(li){
+            li.classList.remove("active");
+        })
+        this.classList.add("active");
+    })
 }
