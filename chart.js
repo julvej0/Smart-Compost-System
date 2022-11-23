@@ -173,26 +173,11 @@ function removeData(chart) {
 
 
 
-
-
-// for (var i = 1; i <= 2; i++) {
-
-//     (function(i){ 
-
-//         setTimeout(function() {
-//             removeData(donutChart)
-//             addData(donutChart, i, 100)
-//         }, 3000*i);
-
-//     })(i);
-
-// }
-
 for (let i = 1; i <= 17; i++) {
-    let x = Math.floor(Math.random() * 10);
+    let x = Math.floor((Math.random() * (35 - 15 + 1)) + 15);
     setTimeout(function() {
-        removeData(donutChart)
-        addData(donutChart, i+6, x)
+        removeData(barChart)
+        addData(barChart, i+6, x)
     }, 3000*i);
 
 }
