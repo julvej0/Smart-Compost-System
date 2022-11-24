@@ -101,17 +101,19 @@ body {
     margin-bottom: 20px;
 }
 
-.item-info-all {
-    position: relative;
+.item.dashboard {
     display: grid;
-    grid-template-columns: auto auto;
-    width:500px; 
-    height:500px;
+    grid-template-columns: 1fr 1fr;
     gap: 50px;
 }
 
-.item-info-all canvas {
-    background: #1d1b41;
+.chartBox {
+    width: 80%;
+    height: 100%;
+    padding: 20px;
+    border-radius: 20px;
+    border: solid 3px rgba(255, 26, 104, 1);
+    background: white;
 }
 
 .item-info {

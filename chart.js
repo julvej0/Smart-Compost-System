@@ -7,16 +7,12 @@ let fourthChart = document.getElementById('fourthChart').getContext('2d');
 let barChart = new Chart(firstChart, {
     type: 'bar',
     data: {
-        labels: ['1', '2', '3', '4', '5', '6'],
+        labels: ['1', '2'],
         datasets:[{
             label: '',
             data: [
                 25,
-                18,
-                33,
-                28,
-                26,
-                21
+                18
             ],
             // backgroundColor: 'green'
             backgroundColor: [
@@ -25,7 +21,8 @@ let barChart = new Chart(firstChart, {
                 "green",
             ],
             borderWidth: 1,
-            borderColor: 'black'
+            borderColor: 'black',
+            categoryPercentage: 0.5,
         }]
     },
     options: {

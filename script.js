@@ -12,7 +12,7 @@ for(var i = 0; i < li_elements.length; i++){
             item.style.display = "none";
         })
         if(li_value == "dashboard") {
-            document.querySelector("." + li_value).style.display = "block";
+            document.querySelector("." + li_value).style.display = "grid";
         }
         else if(li_value == "moisture") {
             document.querySelector("." + li_value).style.display = "block";
