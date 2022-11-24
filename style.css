@@ -107,6 +107,14 @@ body {
     gap: 50px;
 }
 
+@media screen and (max-width: 800px) {
+    .item.dashboard {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+}
+
 .chartBox {
     width: 80%;
     height: 100%;
